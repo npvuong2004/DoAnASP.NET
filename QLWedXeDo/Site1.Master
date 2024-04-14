@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="QLWedXeDo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="form1" runat="server">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">SHOP XE NOOD</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" 
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="xemxe.aspx">Xem xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gioithieu.aspx">Giới thiệu</a>
+                            </li>
+                            <form action="timxe.aspx" class="navbar-form navbar-left" role="Search">              
+			                    <div class="form-group">
+			                        <input name="tukhoa" type="text" class="form-control" placeholder="Tìm kiếm">
+			                    </div>
+			                    <button type="submit" class="btn btn-default">Tìm</button>
+			                </form>
+                            <li class="nav-item">
+                                <a class="nav-link" href="themxe.aspx">Thêm Xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="QLXe.aspx">Quản lý xe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dangky.aspx">Đăng ký</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dangnhap.aspx">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="giohang.aspx">Giỏ hàng</a>
+                            </li>
+
+    
+                    </div>
+            </nav>
+        <div >
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="bg-secondary text-center text-white">            
+            Người làm: Nguyễn Phi Vương 6661120016
+        </div>
+
+    </form>
+
+</body>
+</html>
